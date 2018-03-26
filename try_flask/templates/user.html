@@ -1,0 +1,11 @@
+<!doctype html>
+
+{% extends "layout.html" %}
+
+{% block body %}
+	{% if user %}
+	  <h1>Hello {{ user.username }}!</h1>
+	{% else %}
+	  <h1></h1>
+	{% endif %}	
+{% endblock %}
